@@ -26,6 +26,7 @@ ReactDOM.render(
         <Router history={history}>
             <Route component={Layout}>
                 <Route path='/' component={Phones} />
+                {/* <Route path='/categories' component={'stuff'} /> */}
             </Route>
         </Router>
     </Provider>,
