@@ -11,6 +11,7 @@ import { Provider } from 'react-redux';
 
 import Layout from 'containers/layout';
 import Phones from 'containers/phones';
+import Phone from 'containers/phone';
 
 import reducers from 'reducers';
 
@@ -28,6 +29,7 @@ ReactDOM.render(
                 <Route path='/' component={Phones} />
                 {/* <Route path='/categories' component={'stuff'} /> */}
             </Route>
+            <Route path='/phones/:id' component={Phone} />
         </Router>
     </Provider>,
     document.getElementById('root')
